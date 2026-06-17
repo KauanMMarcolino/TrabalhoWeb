@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineOn</title>
+    <link rel="icon" href="imagens/pipoca.ico" type="image/png">
+    <link rel="stylesheet" href="estilos/layout.css">
+    <link rel="stylesheet" href="estilos/cards.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagens/pipoca.png" alt="Logo">
+
+        <section>
+            <h1>CineOn</h1>
+            <p>Seu portal de filmes favoritos</p>
+        </section>
+        <section class="usuario">
+            <span id="areaUsuario"></span>
+
+            <button id="btnCadastro">
+                <img src="imagens/perfil.png" alt="Perfil">
+            </button>
+        </section>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li>
+                <a href="#">Filmes ▶</a>
+                <ul>
+                    <li><a href="paginas/oscar.html">Últimos Vencedores do Oscar</a></li>
+                    <li><a href="paginas/embreve.html">Em breve</a></li>
+                    
+                </ul>
+            </li>
+            <li><a href="paginas/contato.html">Contato</a></li>
+            <li><a href="paginas/comidas.html">Comidas</a></li>
+            <li><a href="paginas/sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Destaques da Semana</h2>
+
+            <div class="filtros">
+                <input type="text" id="pesquisa" placeholder="Pesquisar filme...">
+
+                <select id="filtroGenero">
+                    <option value="todos">Todos os gêneros</option>
+                    <option value="acao">Ação</option>
+                    <option value="aventura">Aventura</option>
+                    <option value="ficcao">Ficção Científica</option>
+                    <option value="esporte">Esporte</option>
+                    <option value="super-heroi">Super-Herói</option>
+                </select>
+
+                <select id="filtroNota">
+                    <option value="0">Todas as notas</option>
+                    <option value="8">8+</option>
+                    <option value="9">9+</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+
+            
+
+            <div class="cards">
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=jan5CFWs9ic" data-nome="Jurassic World: Recomeço" data-genero="ficcao" data-nota="10">
+                    <img src="imagens/jurassicworld.jpeg" alt="Jurassic World: Recomeço">
+                    <div class="overlay">▶ Assistir Trailer</div>
+                    <h3>Jurassic World: Recomeço</h3>
+                    <p class="genero">🎭 Ficção Científica</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ 10/10</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=AzMo-FgRp64" data-nome="Quarteto Fantástico" data-genero="super-heroi" data-nota="8">
+                    <img src="imagens/quarteto.jpeg" alt="Quarteto Fantástico">
+                    <div class="overlay">▶ Assistir Trailer</div>
+                    <h3>Quarteto Fantástico</h3>
+                    <p class="genero">🎭 Super-Herói</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐☆☆  8/10</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=CT2_P2DZBR0" data-nome="F1: O Filme" data-genero="esporte" data-nota="9">
+                    <img src="imagens/F1.jpeg" alt="F1: O Filme">
+                    <div class="overlay">▶ Assistir Trailer</div>
+                    <h3>F1: O Filme</h3>
+                    <p class="genero">🎭 Esporte</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐⭐☆ 9/10</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=Ox8ZLF6cGM0" data-nome="Superman" data-genero="super-heroi" data-nota="8">
+                    <img src="imagens/superman.jpeg" alt="Superman">
+                    <div class="overlay">▶ Assistir Trailer</div>
+                    <h3>Superman</h3>
+                    <p class="genero">🎭 Super-Herói</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐☆☆  8/10</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=d9MyW72ELq0" data-nome="Avatar: O Caminho da Água" data-genero="ficcao" data-nota="9">
+                    <img src="imagens/avatar.jpeg" alt="Avatar: O Caminho da Água">
+                    <div class="overlay">▶ Assistir Trailer</div>
+                    <h3>Avatar: O Caminho da Água</h3>
+                    <p class="genero">🎭 Ficção Científica</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐⭐☆ 9/10</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=TcMBFSGVi1c" data-nome="Vingadores: Ultimato" data-genero="super-heroi" data-nota="10">
+                    <img src="imagens/vingadores.jpeg" alt="Vingadores: Ultimato">
+                    <div class="overlay">▶ Assistir Trailer</div>
+                    <h3>Vingadores: Ultimato</h3>
+                    <p class="genero">🎭 Super-Herói</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ 10/10</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=73_1biulkYk" data-nome="Deadpool & Wolverine" data-genero="super-heroi" data-nota="9">
+                    <img src="imagens/deadpool.jpeg" alt="Deadpool & Wolverine">
+                    <div class="overlay">▶ Assistir Trailer</div>
+                    <h3>Deadpool & Wolverine</h3>
+                    <p class="genero">🎭 Super-Herói</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐⭐☆ 9/10</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=LEjhY15eCx0" data-nome="Divertidamente 2" data-genero="aventura" data-nota="10">
+                    <img src="imagens/divertidamente.jpeg" alt="Divertidamente 2">
+                    <div class="overlay">▶ Assistir Trailer</div>
+                    <h3>Divertidamente 2</h3>
+                    <p class="genero">🎭 Aventura</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐⭐ 10/10</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=wJO_vIDZn-I" data-nome="Minecraft: O Filme" data-genero="aventura" data-nota="8">
+                    <img src="imagens/minecraft.jpeg" alt="Minecraft: O Filme">
+                    <div class="overlay">▶ Assistir Trailer</div>
+                    <h3>Minecraft: O Filme</h3>
+                    <p class="genero">🎭 Aventura</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐☆☆ 8/10</p>
+                </a>
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=22w7z_lT6YM" data-nome="Como Treinar o Seu Dragão" data-genero="aventura" data-nota="9">
+                    <img src="imagens/dragao.jpeg" alt="Como Treinar o Seu Dragão">
+                    <div class="overlay">▶ Assistir Trailer</div>
+                    <h3>Como Treinar o Seu Dragão</h3>
+                    <p class="genero">🎭 Aventura</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐⭐☆ 9/10</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=qSu6i2iFMO0" data-nome="Sonic 3" data-genero="aventura" data-nota="8">
+                    <img src="imagens/sonic.jpeg" alt="Sonic 3">
+                    <div class="overlay">▶ Assistir Trailer</div>
+                    <h3>Sonic 3</h3>
+                    <p class="genero">🎭 Aventura</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐☆☆ 8/10</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=Way9Dexny3w" data-nome="Duna: Parte Dois" data-genero="ficcao" data-nota="10">
+                    <img src="imagens/duna.jpeg" alt="Duna: Parte Dois">
+                    <div class="overlay">▶ Assistir Trailer</div>
+                    <h3>Duna: Parte Dois</h3>
+                    <p class="genero">🎭 Ficção Científica</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ 10/10</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=fsQgc9pCyDU" data-nome="Missão Impossível" data-genero="acao" data-nota="9">
+                    <img src="imagens/missao.jpeg" alt="Missão Impossível">
+                    <div class="overlay">▶ Assistir Trailer</div>
+                    <h3>Missão Impossível</h3>
+                    <p class="genero">🎭 Ação</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐⭐☆ 9/10</p>
+                </a>
+            </div>
+        </section>
+
+        <aside>
+            <h3>Curiosidades</h3>
+            <p>Você sabia? O cinema surgiu em 1895!</p>
+        </aside>
+    </main>
+
+    <footer>
+        <address>Desenvolvido por Kauan Martin - IFSP Boituva - 2026</address>
+    </footer>
+    
+    <div id="modalCadastro" class="modal">
+
+        <form id="cadastro">
+
+            <h2>Cadastro</h2>
+
+            <input
+                type="text"
+                id="nomeUsuario"
+                placeholder="Nome"
+                required>
+
+            <input
+                type="email"
+                id="emailUsuario"
+                placeholder="E-mail"
+                required>
+
+            <input
+                type="password"
+                id="senhaUsuario"
+                placeholder="Senha"
+                required>
+
+            <button type="submit">
+                Entrar
+            </button>
+
+        </form>
+
+    </div>
+    <script src="script/filtros.js"></script>
+    <script src="script/cadastro.js"></script>
+</body>
+
+</html>

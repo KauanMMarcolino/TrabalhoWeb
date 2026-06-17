@@ -1,0 +1,71 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.filme-card {
+    background: #1e293b;
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .3);
+    transition: .3s;
+    z-index:1;
+}
+
+.filme-card:hover {
+    transform: translateY(-8px);
+}
+
+.filme-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.filme-card:hover img {
+    transform: scale(1.08);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .7);
+    opacity: 0;
+    transition: .3s;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.filme-card:hover .overlay {
+    opacity: 1;
+}
+
+.filme-card h3 {
+    padding: 15px;
+    text-align: center;
+}
+
+.genero{
+    color:#cbd5e1;
+    margin-top:10px;
+    font-size:14px;
+}
+
+.nota{
+    color:#facc15;
+    font-weight:bold;
+    margin-top:5px;
+    margin-bottom:15px;
+}
