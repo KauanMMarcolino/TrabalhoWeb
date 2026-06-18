@@ -1,0 +1,176 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.filme-card {
+    background: #1e293b;
+    border-radius: 18px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .3);
+    transition: .3s;
+    z-index:1;
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.25);
+    display:flex;
+    flex-direction:column;
+}
+
+.filme-card:hover{
+    transform:
+    translateY(-8px)
+    scale(1.03);
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,.4);
+}
+
+.filme-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.filme-card:hover img {
+    transform: scale(1.08);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .7);
+    opacity: 0;
+    transition: .3s;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.filme-card:hover .overlay {
+    opacity: 1;
+}
+
+.filme-card h3 {
+    padding: 15px;
+    text-align: center;
+}
+
+.genero{
+    color:#cbd5e1;
+    margin-top:10px;
+    font-size:14px;
+}
+
+.nota{
+    color:#facc15;
+    font-weight:bold;
+    margin-top:5px;
+}
+
+#carrinho{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+    margin-top:30px;
+}
+
+#listaCarrinho{
+    list-style:none;
+    margin:15px 0;
+}
+
+#listaCarrinho li{
+    padding:8px 0;
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.btnCarrinho{
+    margin-top: auto;
+    padding:10px;
+    width:100%;
+    border:none;
+    border-radius:8px;
+    background:#e50914;
+    color:white;
+    cursor:pointer;
+}
+
+#btnFinalizar{
+    width:100%;
+    margin-top:15px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#22c55e;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#btnFinalizar:hover{
+    background:#16a34a;
+}
+
+@media (max-width: 767px){
+
+
+    .cards{
+        grid-template-columns: 1fr;
+        gap:20px;
+    }
+
+    .filme-card{
+        border-radius:15px;
+    }
+
+    .filme-card img{
+        height:200px;
+    }
+
+    .overlay{
+        height:200px;
+        font-size:1.1rem;
+    }
+
+    .filme-card h3{
+        padding:12px;
+        font-size:1rem;
+    }
+
+    .genero{
+        font-size:13px;
+    }
+
+    .nota{
+        font-size:14px;
+    }
+
+
+    #carrinho{
+        padding:15px;
+    }
+
+    #listaCarrinho li{
+        font-size:14px;
+    }
+
+    .btnCarrinho,
+    #btnFinalizar{
+        width:100%;
+        font-size:14px;
+    }
+
+}
