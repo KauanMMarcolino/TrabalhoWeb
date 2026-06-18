@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineOn</title>
+    <link rel="icon" href="imagens/pipoca.ico" type="image/png">
+    <link rel="stylesheet" href="estilos/layout.css">
+    <link rel="stylesheet" href="estilos/cards.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="imagens/pipoca.png" alt="Logo">
+
+        <section>
+            <h1>CineOn</h1>
+            <p>Seu portal de filmes favoritos</p>
+        </section>
+        <section class="usuario">
+            <span id="areaUsuario"></span>
+
+            <button id="btnCadastro">
+                <img src="imagens/perfil.png" alt="Perfil">
+            </button>
+            <button id="btnLogout" style="display:none;">
+                <img src="imagens/sair.png" alt="Logout">
+            </button>
+        </section>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li>
+                <a href="#">Filmes ▶</a>
+                <ul>
+                    <li><a href="paginas/oscar.html">Últimos Vencedores do Oscar</a></li>
+                    <li><a href="paginas/embreve.html">Em breve</a></li>
+
+                </ul>
+            </li>
+            <li><a href="paginas/contato.html">Contato</a></li>
+            <li><a href="paginas/comidas.html">Comidas</a></li>
+            <li><a href="paginas/sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Destaques da Semana</h2>
+
+            <div class="filtros">
+                <input type="text" id="pesquisa" placeholder="Pesquisar filme...">
+
+                <select id="filtroGenero">
+                    <option value="todos">Todos os gêneros</option>
+                    <option value="acao">Ação</option>
+                    <option value="aventura">Aventura</option>
+                    <option value="ficcao">Ficção Científica</option>
+                    <option value="esporte">Esporte</option>
+                    <option value="super-heroi">Super-Herói</option>
+                </select>
+
+                <select id="filtroNota">
+                    <option value="0">Todas as notas</option>
+                    <option value="8">8+</option>
+                    <option value="9">9+</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+
+
+
+            <article class="cards">
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=jan5CFWs9ic"
+                    data-nome="Jurassic World: Recomeço" data-genero="ficcao" data-nota="10" data-idade="12" data-sinopse="Uma nova expedição viaja para uma ilha remota repleta de dinossauros em busca de material genético capaz de revolucionar a medicina.">
+                    <img src="imagens/jurassicworld.jpeg" alt="Jurassic World: Recomeço">
+                    <h3>Jurassic World: Recomeço</h3>
+                    <p class="genero">🎭 Ficção Científica</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ 10/10</p>
+                    <p class="classificacao">🟡 12 anos</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=AzMo-FgRp64"
+                    data-nome="Quarteto Fantástico" data-genero="super-heroi" data-nota="8" data-idade="12" data-sinopse="Quatro astronautas ganham poderes extraordinários após um acidente cósmico e precisam salvar a Terra de uma ameaça intergaláctica.">
+                    <img src="imagens/quarteto.jpeg" alt="Quarteto Fantástico">
+                    <h3>Quarteto Fantástico</h3>
+                    <p class="genero">🎭 Super-Herói</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐☆☆ 8/10</p>
+                    <p class="classificacao">🟡 12 anos</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=CT2_P2DZBR0"
+                    data-nome="F1: O Filme" data-genero="esporte" data-nota="9" data-idade="10" data-sinopse="Um ex-piloto retorna às pistas para orientar uma jovem promessa da Fórmula 1 em busca da vitória.">
+                    <img src="imagens/F1.jpeg" alt="F1: O Filme">
+                    <h3>F1: O Filme</h3>
+                    <p class="genero">🎭 Esporte</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐⭐☆ 9/10</p>
+                    <p class="classificacao">🔵 10 anos</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=Ox8ZLF6cGM0"
+                    data-nome="Superman" data-genero="super-heroi" data-nota="8" data-idade="12" data-sinopse="Clark Kent tenta equilibrar sua vida humana enquanto protege o planeta como o poderoso Superman.">
+                    <img src="imagens/superman.jpeg" alt="Superman">
+                    <h3>Superman</h3>
+                    <p class="genero">🎭 Super-Herói</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐☆☆ 8/10</p>
+                    <p class="classificacao">🟡 12 anos</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=d9MyW72ELq0"
+                    data-nome="Avatar: O Caminho da Água" data-genero="ficcao" data-nota="9" data-idade="12" data-sinopse="Jake Sully e Neytiri enfrentam novas ameaças enquanto exploram os oceanos e as tribos aquáticas de Pandora.">
+                    <img src="imagens/avatar.jpeg" alt="Avatar: O Caminho da Água">
+                    <h3>Avatar: O Caminho da Água</h3>
+                    <p class="genero">🎭 Ficção Científica</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐⭐☆ 9/10</p>
+                    <p class="classificacao">🟡 12 anos</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=TcMBFSGVi1c"
+                    data-nome="Vingadores: Ultimato" data-genero="super-heroi" data-nota="10" data-idade="12" data-sinopse="Os Vingadores enfrentam seu desafio mais difícil: salvar o universo da destruição.">
+                    <img src="imagens/vingadores.jpeg" alt="Vingadores: Ultimato">
+                    <h3>Vingadores: Ultimato</h3>
+                    <p class="genero">🎭 Super-Herói</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ 10/10</p>
+                    <p class="classificacao">🟡 12 anos</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=73_1biulkYk"
+                    data-nome="Deadpool & Wolverine" data-genero="super-heroi" data-nota="9" data-idade="18" data-sinopse="Deadpool e Wolverine enfrentam um novo desafio que os coloca em conflito com uma ameaça que ameaça o universo.">
+                    <img src="imagens/deadpool.jpeg" alt="Deadpool & Wolverine">
+                    <h3>Deadpool & Wolverine</h3>
+                    <p class="genero">🎭 Super-Herói</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐⭐☆ 9/10</p>
+                    <p class="classificacao">🔞 18 anos</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=LEjhY15eCx0"
+                    data-nome="Divertidamente 2" data-genero="aventura" data-nota="10" data-idade="Livre" data-sinopse="A vida de Riley muda quando ela se muda para uma nova cidade, enfrentando novas emoções e desafios.">
+                    <img src="imagens/divertidamente.jpeg" alt="Divertidamente 2">
+                    <h3>Divertidamente 2</h3>
+                    <p class="genero">🎭 Aventura</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ 10/10</p>
+                    <p class="classificacao">🟢 Livre</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=wJO_vIDZn-I"
+                    data-nome="Minecraft: O Filme" data-genero="aventura" data-nota="8" data-idade="Livre" data-sinopse="Um jovem explorador se aventura em um mundo de blocos e criaturas misteriosas.">
+                    <img src="imagens/minecraft.jpeg" alt="Minecraft: O Filme">
+                    <h3>Minecraft: O Filme</h3>
+                    <p class="genero">🎭 Aventura</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐☆☆ 8/10</p>
+                    <p class="classificacao">🟢 Livre</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=22w7z_lT6YM"
+                    data-nome="Como Treinar o Seu Dragão" data-genero="aventura" data-nota="9" data-idade="Livre" data-sinopse="Hiccup e Toothless enfrentam novas ameaças enquanto exploram o mundo dos dragões.">
+                    <img src="imagens/dragao.jpeg" alt="Como Treinar o Seu Dragão">
+                    <h3>Como Treinar o Seu Dragão</h3>
+                    <p class="genero">🎭 Aventura</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐⭐☆ 9/10</p>
+                    <p class="classificacao">🟢 Livre</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=qSu6i2iFMO0"
+                    data-nome="Sonic 3" data-genero="aventura" data-nota="8" data-idade="Livre" data-sinopse="Sonic se une a Tails e Knuckles para enfrentar o vilão Dr. Eggman e salvar seu reino.">
+                    <img src="imagens/sonic.jpeg" alt="Sonic 3">
+                    <h3>Sonic 3</h3>
+                    <p class="genero">🎭 Aventura</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐☆☆ 8/10</p>
+                    <p class="classificacao">🟢 Livre</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=Way9Dexny3w"
+                    data-nome="Duna: Parte Dois" data-genero="ficcao" data-nota="10" data-idade="14" data-sinopse="Paul Atreides enfrenta os desafios de liderar a rebelião e proteger sua família em um universo em transformação.">
+                    <img src="imagens/duna.jpeg" alt="Duna: Parte Dois">
+                    <h3>Duna: Parte Dois</h3>
+                    <p class="genero">🎭 Ficção Científica</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ 10/10</p>
+                    <p class="classificacao">🟠 14 anos</p>
+                </a>
+
+                <a class="filme-card" target="_blank" href="https://www.youtube.com/watch?v=fsQgc9pCyDU"
+                    data-nome="Missão Impossível" data-genero="acao" data-nota="9" data-idade="14" data-sinopse="Ethan Hunt e sua equipe enfrentam um novo desafio que os coloca em conflito com uma ameaça que ameaça o mundo.">
+                    <img src="imagens/missao.jpeg" alt="Missão Impossível">
+                    <h3>Missão Impossível</h3>
+                    <p class="genero">🎭 Ação</p>
+                    <p class="nota">⭐⭐⭐⭐⭐⭐⭐⭐⭐☆ 9/10</p>
+                    <p class="classificacao">🟠 14 anos</p>
+                </a>
+            </article>
+        </section>
+    </main>
+
+    <aside>
+        <h3>Curiosidades</h3>
+        <p>Você sabia? O cinema surgiu em 1895!</p>
+    </aside>
+
+    <footer>
+        <address>Desenvolvido por Kauan Martin - IFSP Boituva - 2026</address>
+    </footer>
+
+    <div id="modalCadastro" class="modal">
+
+        <form id="cadastro">
+
+            <h2>Cadastro</h2>
+
+            <input type="text" id="nomeUsuario" placeholder="Nome" required>
+
+            <input type="date" id="idadeUsuario" required>
+
+            <input type="email" id="emailUsuario" placeholder="E-mail" required>
+
+            <input type="password" id="senhaUsuario" placeholder="Senha" required>
+
+            <button type="submit">
+                Entrar
+            </button>
+
+        </form>
+
+    </div>
+    <aside id="painelFilme">
+
+        <button id="fecharPainel">✖</button>
+
+        <h2 id="tituloFilme"></h2>
+
+        <p id="sinopseFilme"></p>
+
+        <p id="notaFilme"></p>
+
+        <p id="idadeFilme"></p>
+
+        <a id="btnTrailer" target="_blank">
+            ▶ Ver Trailer
+        </a>
+
+        <a id="btnFilme" target="_blank">
+            🎬 Assistir Filme
+        </a>
+
+    </aside>
+    <script src="script/filtros.js"></script>
+    <script src="script/cadastro.js"></script>
+    <script src="script/filmes.js"></script>
+</body>
+
+</html>

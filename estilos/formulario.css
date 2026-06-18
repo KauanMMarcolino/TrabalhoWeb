@@ -1,0 +1,65 @@
+form{
+    max-width:700px;
+    margin:auto;
+
+    background:#1e293b;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.3);
+}
+
+form input,
+form textarea,
+form select{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:5px;
+    margin-bottom:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#334155;
+
+    color:white;
+}
+
+form button{
+
+    padding:12px 24px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button[type="submit"]{
+    background:#e50914;
+    color:white;
+}
+
+button[type="reset"]{
+    background:#475569;
+    color:white;
+}
+
+textarea{
+    width:100%;
+    padding:10px;
+    border-radius:8px;
+    border:none;
+    resize:vertical;
+    font-family:inherit;
+}

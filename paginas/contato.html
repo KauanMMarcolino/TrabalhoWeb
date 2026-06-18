@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - CineOn</title>
+    <link rel="stylesheet" href="../estilos/layout.css">
+    <link rel="stylesheet" href="../estilos/formulario.css">
+    <script src="../script/contato.js" defer></script>
+    <link rel="icon" href="../imagens/pipoca.ico" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img src="../imagens/pipoca.png" alt="Logo">
+
+        <section>
+            <h1>CineOn</h1>
+            <p>Seu portal de filmes favoritos</p>
+        </section>
+        <section class="usuario">
+            <span id="areaUsuario"></span>
+        </section>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li>
+                <a href="#">Filmes ▶</a>
+                <ul>
+                    <li><a href="oscar.html">Últimos Vencedores do Oscar</a></li>
+                    <li><a href="embreve.html">Em breve</a></li>
+                    
+                </ul>
+            </li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="comidas.html">Comidas</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <article>
+                <h2>Envie sua opinião</h2>
+
+                <form id="formulario">
+
+                    <label>Nome:
+                        <input type="text" id="nome" required>
+                    </label>
+
+                    <label>Email:
+                        <input type="email" id="email" required>
+                    </label>
+
+                    <label>Data de nascimento:
+                        <input type="date" id="idade">
+                    </label>
+
+                    <label>Telefone:
+                        <input type="tel" id="telefone" placeholder="(11) 99999-9999">
+                    </label>
+
+                    <label>Tipo de contato:
+                        <select id="tipoContato">
+                            <option value="">Escolha uma opção</option>
+                            <option>Dúvida</option>
+                            <option>Sugestão</option>
+                            <option>Elogio</option>
+                            <option>Reclamação</option>
+                        </select>
+                    </label>
+
+                    <label>Mensagem:
+                        <textarea id="mensagem" rows="5"></textarea>
+                    </label>
+
+                    <label>Filme favorito:
+                        <input type="text" id="filme">
+                    </label>
+
+                    <label>Gênero preferido:
+                        <select id="genero">
+                            <option value="">Escolha uma opção</option>
+                            <option>Ação</option>
+                            <option>Comédia</option>
+                            <option>Terror</option>
+                            <option>Ficção Científica</option>
+                            <option>Super-Herói</option>
+                            <option>Aventura</option>
+                            <option>Esporte</option>
+                            <option>Outro</option>
+                        </select>
+                    </label>
+
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+
+                </form>
+
+                <section>
+                    <p id="resultado"></p>
+                </section>
+
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <address>Desenvolvido por Kauan Martin - IFSP Boituva - 2026</address>
+    </footer>
+    <script src="../script/cadastro.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - CineOn</title>
+    <link rel="stylesheet" href="../estilos/layout.css">
+    <link rel="icon" href="../imagens/pipoca.ico" type="image/png">
+    <link rel="stylesheet" href="../estilos/cards.css">
+    <script src="../script/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img src="../imagens/pipoca.png" alt="Logo">
+
+        <section>
+            <h1>CineOn</h1>
+            <p>Seu portal de filmes favoritos</p>
+        </section>
+        <section class="usuario">
+            <span id="areaUsuario"></span>
+
+            <button id="btnCadastro">
+                <img src="../imagens/perfil.png" alt="Perfil">
+            </button>
+            <button id="btnLogout" style="display:none;">
+                <img src="../imagens/sair.png" alt="Logout">
+            </button>
+        </section>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li>
+                <a href="#">Filmes ▶</a>
+                <ul>
+                    <li><a href="oscar.html">Últimos Vencedores do Oscar</a></li>
+                    <li><a href="embreve.html">Em breve</a></li>
+                    
+                </ul>
+            </li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="comidas.html">Comidas</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+
+            <h2>🍿 Bomboniere CineOn</h2>
+
+            <p>
+                Aproveite nossos combos e lanches para tornar sua experiência
+                ainda mais articleertida.
+            </p>
+
+            <article class="cards">
+
+                <article class="filme-card" data-produto="Pipoca Grande" data-preco="18">
+                    <img src="../imagens/pipocagrande.jpeg" alt="Pipoca Grande">
+                    <h3>🍿 Pipoca Grande</h3>
+                    <p>R$ 18,00</p>
+                    <button class="btnCarrinho">Adicionar</button>
+                </article>
+
+                <article class="filme-card" data-produto="Refrigerante 700ml" data-preco="12">
+                    <img src="../imagens/refri.jpeg" alt="Refrigerante">
+                    <h3>🥤 Refrigerante 700ml</h3>
+                    <p>R$ 12,00</p>
+                    <button class="btnCarrinho">Adicionar</button>
+                </article>
+
+                <article class="filme-card" data-produto="Chocolate" data-preco="8">
+                    <img src="../imagens/chocolate.jpeg" alt="Chocolate">
+                    <h3>🍫 Chocolate</h3>
+                    <p>R$ 8,00</p>
+                    <button class="btnCarrinho">Adicionar</button>
+                </article>
+
+                <article class="filme-card" data-produto="Balas" data-preco="5">
+                    <img src="../imagens/balas.jpeg" alt="Balas">
+                    <h3>🍬 Balas</h3>
+                    <p>R$ 5,00</p>
+                    <button class="btnCarrinho">Adicionar</button>
+                </article>
+
+                <article class="filme-card" data-produto="Hot Dog" data-preco="15">
+                    <img src="../imagens/hotdog.jpeg" alt="Hot Dog">
+                    <h3>🌭 Hot Dog</h3>
+                    <p>R$ 15,00</p>
+                    <button class="btnCarrinho">Adicionar</button>
+                </article>
+
+                <article class="filme-card" data-produto="Combo Família" data-preco="45">
+                    <img src="../imagens/combo.png" alt="Combo Família">
+                    <h3>🎟️ Combo Família</h3>
+                    <p>2 Pipocas + 2 Refrigerantes</p>
+                    <p>R$ 45,00</p>
+                    <button class="btnCarrinho">Adicionar</button>
+                </article>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <aside id="carrinho">
+        <h3>🛒 Carrinho</h3>
+
+        <ul id="listaCarrinho"></ul>
+
+        <p>
+            <strong>Total:</strong>
+            R$ <span id="totalCarrinho">0</span>
+        </p>
+
+        <button id="btnFinalizar">
+            Finalizar Compra
+        </button>
+    </aside>
+
+    <footer>
+        <address>Desenvolvido por Kauan Martin - IFSP Boituva - 2026</address>
+    </footer>
+    <div id="modalCadastro" class="modal">
+
+        <form id="cadastro">
+
+            <h2>Cadastro</h2>
+
+            <input type="text" id="nomeUsuario" placeholder="Nome" required>
+
+            <input type="date" id="idadeUsuario" required>
+
+            <input type="email" id="emailUsuario" placeholder="E-mail" required>
+
+            <input type="password" id="senhaUsuario" placeholder="Senha" required>
+
+            <button type="submit">
+                Entrar
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="../script/cadastro.js"></script>
+    <script src="../script/carrinho.js"></script>
+
+</body>
+
+</html>
